@@ -1,5 +1,5 @@
 # Trigonometric Circle
-## C++ and Raylib
+## C++ and [Raylib](https://github.com/raysan5/raylib) ([install](https://github.com/raylib-extras/game-premake))
 
 # О проекте
 
