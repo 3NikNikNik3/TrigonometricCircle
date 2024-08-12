@@ -1,107 +1,109 @@
 # Trigonometric Circle
 ## C++ and Raylib
 
-# О проекте
+# About the project
 
-С помощью этой программы Вы сможете увидеть конкретные точки определённого решения на тригонометрическом круге. 
+With this program, you can see the specific points of a particular solution on a trigonometric circle.
 
-Например, Вам нужно узнать какие точки зашифрованы в (-1)^k * π/6 + π*k.
-Просто вводим ```add (-1)^k*pi/6 + pi*k``` и видим:
+For example, you need to find out which points are encrypted in add (-1)^k * pi/6 + pi*k.
+Just enter ```add (-1)^k*pi/6 + pi*k``` and we see:
 
 ![image](screenshots/0.png)
 
-# Как управлять?
+# How to manage?
 
-Чтобы увидеть название точки нужно на неё нависти курсор
+To see the name of a point, you need to hover the cursor over it
 
-Для остольного управления есть самописная концоль по центру.
+For the rest of the control, there is a self-written console in the center.
 
 ![image](screenshots/1.png)
 
-## Возможности
+## Opportunities
 
-Есть возможность не только добавлять и удалять точьки, но и:
-- изменять цвет (решений, консоли, круга)
-- скрывать/показывать решения
-- просмотреть все точки и решения, что Вы добавили
-- изменить размер шрифта (если он слишком велик или мал)
+It is possible not only to add and remove points, but also:
+- change the color (solutions, console, circle)
+- hide/show solutions
+- view all the points and solutions that you have added
+- change the font size (if it is too large or small)
 
-## Конкретные команды
+## Specific commands
 
 ### add solving:string
 
-Добавляет решение (можно вписывать через пробел)
+Add a solution (can be write by a space)
 
 ### clear
 
-Убирает все добавленые решения
+Removes all added solutions
 
 ### color console|circle r:int g:int b:int
 
-Изменяет цвет косоли|круга на rgb
+Changes the color of the console|circle to <rgb>
 
 ### color points id:int r:int g:int b:int
 
-Изменяет цвет решения с id на rgb
+Changes the color of the solution with <id> to <rgb>
 
 ### delete id:int
 
-Удалить решениек с id (все остальные свой id не поменяют)
+Remove the solution with <id> (all others will not change their id)
 
 ### exit
 
-Закрыть приложения (можно нажать на крестик или ESC)
+Close applications (you can click on the X or ESC)
 
 ### help
 
-Вывести список всех команд с кратким описанием
+Display a list of all commands with a brief description
 
 ### help command:string
 
-Вывести информацию об команде
+Display information about <command>
 
 ### hide id:int
 
-Спрятать все точки решения
+Hide all solution points
 
 ### list points
 
-Вывести все точки
+Print all points
 
 ### list solving
 
-Вывести все решения с их id
+Display all solutions with their id
 
 ### set_font_size size:int
 
-Установить размер шрифта консоли
+Set the font size of the console
 
 ### show id:int
 
-Показать все точки решения
+Display all solution points
 
-# Немного о файлах
+# A little bit about the files
 
 ## Math (.hpp/.cpp)
 
-Логика преобразования строки в "понятное" вырожение (если везде убрать метод get_ans, то полностью независимый модуль)
+The logic of converting a string into an "understandable" expression (if you remove ```get_ans``` method everywhere, then a completely independent module)
 
 ## LikeConsole (.hpp/.cpp)
 
-В них храняться вся логика консоли (и некоторые команды). Это полностью независимый модуль (правда нужна raylib)
+They contain all the logic of the console (and some commands). This is a completely independent module (though raylib is needed)
 
 ## Points (.hpp/.cpp)
 
-Всё, что касается точки (не её названия) и круга
+Everything about a point (not its name) and the circle
 
 ## NamePoint (.hpp/.cpp)
 
-Логика отображения названия точки (и в консоле, и на экране). Название главного класса (Ans) глупое, но понял я это, когда было поздно
+The logic of displaying the point name (both in the console and on the screen). The name of the main class (Ans) is stupid, but I realized it when it was too late
 
 ## MyCommand (.hpp/.cpp)
 
-Все остальные команды
+All other commands
 
 ## main.cpp
 
-Просто ```void main();```
+Just ```void main();```
+
+[Ru ReadMe](https://github.com/3NikNikNik3/TrigonometricCircle/blob/main/ReadMe.md)
