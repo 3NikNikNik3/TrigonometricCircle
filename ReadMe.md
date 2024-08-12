@@ -106,4 +106,4 @@ All other commands
 
 Just ```void main();```
 
-[Ru ReadMe](https://github.com/3NikNikNik3/TrigonometricCircle/blob/main/ReadMe.md)
+[Ru ReadMe](https://github.com/3NikNikNik3/TrigonometricCircle/blob/main/ReadMe_ru.md)
